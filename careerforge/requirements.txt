@@ -11,3 +11,4 @@ python-multipart>=0.0.9
 pdfplumber>=0.11.0
 pypdf>=4.2.0
 email-validator
+argon2-cffi
