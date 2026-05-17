@@ -42,6 +42,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # ── Routes ──
 app.include_router(health.router, prefix="/api/v1", tags=["Health"])
 app.include_router(users.router, prefix="/api/v1/users", tags=["Users"])
