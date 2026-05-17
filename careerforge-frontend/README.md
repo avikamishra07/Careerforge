@@ -10,7 +10,7 @@ npm install
 
 # 2. Set environment variable
 cp .env.example .env
-# Edit .env: VITE_API_BASE_URL=http://localhost:8000/api/v1
+# Edit .env: VITE_API_BASE_URL="https://careerforge-7pqw.onrender.com"
 
 # 3. Start dev server
 npm run dev
@@ -56,8 +56,8 @@ src/
 
 | Variable | Default | Description |
 |---|---|---|
-| `VITE_API_BASE_URL` | `http://localhost:8000/api/v1` | Backend API URL |
+| `VITE_API_BASE_URL` | `"https://careerforge-7pqw.onrender.com"` | Backend API URL |
 
 ## Backend
 
-Make sure FastAPI backend is running on `http://localhost:8000`.
+Make sure FastAPI backend is running on `"https://careerforge-7pqw.onrender.com"`.

@@ -45,9 +45,9 @@ uvicorn main:app --reload --port 8000
 
 | URL | Description |
 |-----|-------------|
-| http://localhost:8000/docs | Swagger UI — test all endpoints |
-| http://localhost:8000/redoc | ReDoc API reference |
-| http://localhost:8000/api/v1/health | Health check |
+| http://"https://careerforge-7pqw.onrender.com"/docs | Swagger UI — test all endpoints |
+| http://"https://careerforge-7pqw.onrender.com"/redoc | ReDoc API reference |
+| http://"https://careerforge-7pqw.onrender.com"/api/v1/health | Health check |
 
 ---
 
@@ -127,15 +127,15 @@ careerforge/
 
 ```bash
 # Health check
-curl http://localhost:8000/api/v1/health
+curl "https://careerforge-7pqw.onrender.com"
 
 # Generate interview questions
-curl -X POST http://localhost:8000/api/v1/interview/questions \
+curl -X POST "https://careerforge-7pqw.onrender.com" \
   -H "Content-Type: application/json" \
   -d '{"role": "Backend Engineer", "level": "mid", "count": 5}'
 
 # Team matching
-curl -X POST http://localhost:8000/api/v1/team/match \
+curl -X POST "https://careerforge-7pqw.onrender.com" \
   -H "Content-Type: application/json" \
   -d '{"skills": ["Python", "React"], "interests": "AI startups", "experience": "intermediate"}'
 ```
